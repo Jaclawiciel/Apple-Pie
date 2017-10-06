@@ -14,10 +14,20 @@ class ViewController: UIViewController {
     var listOfWords = ["swift", "bug", "application"]
     let incorrectMovesAllowed = 7
     var totalWins = 0
-    var totalLooses = 0
+    var totalLosses = 0
+    var currentGame: Game!
+    
     
     //MARK: Methods
     func newRound() {
+        let newWord = listOfWords.removeFirst()
+        currentGame = Game(word: newWord, incorrectMovesRemaining: incorrectMovesAllowed)
+        updateUI()
+    }
+    
+    func updateUI() {
+        scoreLabel.text = "Wins: \(totalWins), Losses: \(totalLosses)"
+        treeImageView.image = UIImage(named: "Tree \(currentGame.incorrectMovesRemaining)")
     }
 
     //MARK: Outlets
