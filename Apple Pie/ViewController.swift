@@ -9,6 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    //MARK: Properties
+    var listOfWords = ["swift", "bug", "application"]
+    let incorrectMovesAllowed = 7
+    var totalWins = 0
+    var totalLooses = 0
+    
+    //MARK: Methods
+    func newRound() {
+    }
 
     //MARK: Outlets
     //Images
@@ -30,7 +40,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        newRound()
     }
 
     override func didReceiveMemoryWarning() {
