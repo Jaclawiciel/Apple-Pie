@@ -32,6 +32,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1r-90-92J" userLabel="A">
                                                         <rect key="frame" x="0.0" y="0.0" width="133.5" height="30"/>
                                                         <state key="normal" title="A"/>
+                                                        <connections>
+                                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M1W-zM-Eqb"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0w-11-Goj">
                                                         <rect key="frame" x="133.5" y="0.0" width="133.5" height="30"/>
@@ -133,7 +136,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="111" height="30"/>
                                                         <state key="normal" title="U"/>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJy-iT-WZl" userLabel="A">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJy-iT-WZl">
                                                         <rect key="frame" x="111" y="0.0" width="111.5" height="30"/>
                                                         <state key="normal" title="V"/>
                                                     </button>
@@ -187,6 +190,37 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="correctWordLabel" destination="cRj-4G-OXe" id="Pt6-Pg-EzX"/>
+                        <outlet property="scoreLabel" destination="FpW-GY-lHk" id="byD-wx-uO8"/>
+                        <outlet property="treeImageView" destination="LTl-mP-XEc" id="odO-Wu-doW"/>
+                        <outletCollection property="letterButtons" destination="w1r-90-92J" collectionClass="NSMutableArray" id="BHT-kg-tZb"/>
+                        <outletCollection property="letterButtons" destination="u0w-11-Goj" collectionClass="NSMutableArray" id="uFh-ed-MGa"/>
+                        <outletCollection property="letterButtons" destination="gbr-yb-heC" collectionClass="NSMutableArray" id="Ovu-Fj-Tw7"/>
+                        <outletCollection property="letterButtons" destination="93L-xy-0dF" collectionClass="NSMutableArray" id="yLC-mk-0gA"/>
+                        <outletCollection property="letterButtons" destination="ai7-c3-Kgb" collectionClass="NSMutableArray" id="fbL-hN-UCb"/>
+                        <outletCollection property="letterButtons" destination="Te7-nx-n7L" collectionClass="NSMutableArray" id="c3k-el-0ng"/>
+                        <outletCollection property="letterButtons" destination="6P6-1V-JFw" collectionClass="NSMutableArray" id="O9H-B8-3O6"/>
+                        <outletCollection property="letterButtons" destination="VUY-rb-riS" collectionClass="NSMutableArray" id="aDy-Zk-lE4"/>
+                        <outletCollection property="letterButtons" destination="3vQ-dk-QlY" collectionClass="NSMutableArray" id="mdW-tW-rk7"/>
+                        <outletCollection property="letterButtons" destination="IMd-Bp-vKu" collectionClass="NSMutableArray" id="uwo-Vz-CTx"/>
+                        <outletCollection property="letterButtons" destination="pOT-kv-dz4" collectionClass="NSMutableArray" id="l7R-Oy-5VZ"/>
+                        <outletCollection property="letterButtons" destination="PAn-lV-Fy8" collectionClass="NSMutableArray" id="6Tt-Bd-Ko9"/>
+                        <outletCollection property="letterButtons" destination="xgr-LE-LlB" collectionClass="NSMutableArray" id="WPA-he-ySA"/>
+                        <outletCollection property="letterButtons" destination="lMs-Pi-sPC" collectionClass="NSMutableArray" id="F30-d0-YiY"/>
+                        <outletCollection property="letterButtons" destination="4xk-ta-dxT" collectionClass="NSMutableArray" id="she-eP-SQj"/>
+                        <outletCollection property="letterButtons" destination="hxH-Gz-wux" collectionClass="NSMutableArray" id="VEw-jU-CBt"/>
+                        <outletCollection property="letterButtons" destination="70b-X0-5sZ" collectionClass="NSMutableArray" id="19p-K1-jNc"/>
+                        <outletCollection property="letterButtons" destination="YJ7-bz-3SI" collectionClass="NSMutableArray" id="O5g-H4-Q1q"/>
+                        <outletCollection property="letterButtons" destination="eMo-5i-Acn" collectionClass="NSMutableArray" id="hiD-Tm-1KA"/>
+                        <outletCollection property="letterButtons" destination="TxG-Td-9nY" collectionClass="NSMutableArray" id="P9K-fw-phy"/>
+                        <outletCollection property="letterButtons" destination="HC2-y0-FX4" collectionClass="NSMutableArray" id="3Ox-IH-RU7"/>
+                        <outletCollection property="letterButtons" destination="LJy-iT-WZl" collectionClass="NSMutableArray" id="bGE-7f-5Hi"/>
+                        <outletCollection property="letterButtons" destination="uxt-ll-pDa" collectionClass="NSMutableArray" id="9W3-hl-cgA"/>
+                        <outletCollection property="letterButtons" destination="eYd-1G-TtT" collectionClass="NSMutableArray" id="Dwc-NX-JjZ"/>
+                        <outletCollection property="letterButtons" destination="68V-jC-aM3" collectionClass="NSMutableArray" id="QC1-um-Yli"/>
+                        <outletCollection property="letterButtons" destination="ITW-yJ-CXH" collectionClass="NSMutableArray" id="9e5-Kl-4su"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
